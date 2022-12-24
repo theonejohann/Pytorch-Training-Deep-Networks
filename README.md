@@ -19,8 +19,8 @@ Pytorch Training Deep Networks
 [johann (@theoneandonlyjohann) * Instagram photos and videos](https://www.instagram.com/theoneandonlyjohann/)
 
 # Model
-`
-class MnistModel(nn.Module):
+
+`class MnistModel(nn.Module):
     """Feedfoward neural network with 1 hidden layer"""
     def __init__(self, in_size, hidden_size, out_size):
         super().__init__()
@@ -61,5 +61,4 @@ class MnistModel(nn.Module):
         return {'val_loss': epoch_loss.item(), 'val_acc': epoch_acc.item()}
     
     def epoch_end(self, epoch, result):
-        print("Epoch [{}], val_loss: {:.4f}, val_acc: {:.4f}".format(epoch, result['val_loss'], result['val_acc']))
-`
+        print("Epoch [{}], val_loss: {:.4f}, val_acc: {:.4f}".format(epoch, result['val_loss'], result['val_acc']))`
